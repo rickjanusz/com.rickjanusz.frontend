@@ -22,16 +22,15 @@ const NavStyles = styled.ul`
     cursor: pointer;
     &:before {
       content: '';
-      height: 5rem;
+      height: 0;
       margin-top: 2.5rem;
-      width: 0;
+      width: 100%;
       position: absolute;
-      top: 0;
-      left: 50%;
+      left: 0;
       z-index: -1;
       background: #ea6d07;
-      transform: translateX(-50%);
-      transition: width 0.4s;
+      transform: translateY(-50%) rotate(-3deg);
+      transition: height 0.4s;
       transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
     }
     &:hover,
@@ -39,7 +38,11 @@ const NavStyles = styled.ul`
       outline: none;
       color: #fff;
       &:before {
-        width: calc(120% - 60px);
+        height: 60%;
+        margin-top: 0;
+        width: 100%;
+        transform: translateY(0%) rotate(-3deg);
+        height: calc(80% - 50px);
       }
     }
   }
@@ -50,9 +53,13 @@ const NavStyles = styled.ul`
     a,
     button {
       font-size: 1.5rem;
-      &:before {
-        height: 100%;
-        margin-top: 0;
+      &:hover,
+      &:focus {
+        &:before {
+          height: 60%;
+          margin-top: 0;
+          width: 100%;
+        }
       }
     }
   }
@@ -65,9 +72,6 @@ const NavStyles = styled.ul`
       &:hover,
       &:focus {
         &:before {
-          height: 100%;
-          margin-top: 0;
-          width: 100%;
         }
       }
     }
