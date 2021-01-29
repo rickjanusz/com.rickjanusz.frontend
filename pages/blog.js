@@ -1,12 +1,10 @@
 import CreateItem from '../components/CreateItem'
 import PleaseSignIn from '../components/PleaseSignIn'
 
-const Sell = (props) => (
+const Blog = (props) => (
   <div>
-    <PleaseSignIn>
-      <CreateItem />
-    </PleaseSignIn>
+    <h1>Blog</h1>
   </div>
 )
 
-export default Sell
+export default Blog
