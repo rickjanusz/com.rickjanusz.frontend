@@ -52,7 +52,7 @@ class Signin extends Component {
                 <label htmlFor="email">
                   Email
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="Email"
                     value={this.state.email}

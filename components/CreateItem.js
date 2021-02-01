@@ -30,9 +30,9 @@ class CreateItem extends Component {
   state = {
     title: 'Cool Training',
     description: 'This will make you an expert beyond expert',
-    image: 'dog.jpg',
-    largeImage: 'large-dog.jpg',
-    price: 1110,
+    image: '',
+    largeImage: '',
+    price: 12110,
   }
   handleChange = (e) => {
     const { name, type, value } = e.target

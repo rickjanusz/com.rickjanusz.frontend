@@ -56,7 +56,7 @@ class Signup extends Component {
                 <label htmlFor="email">
                   Email
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="Email"
                     value={this.state.email}
@@ -76,7 +76,7 @@ class Signup extends Component {
                 <label htmlFor="password">
                   Password
                   <input
-                    type="text"
+                    type="password"
                     name="password"
                     placeholder="Password"
                     value={this.state.password}
