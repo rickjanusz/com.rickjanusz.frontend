@@ -390,12 +390,36 @@ var CartItemStyles = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.li
 
 var CartItem = function CartItem(_ref) {
   var cartItem = _ref.cartItem;
+  // 1. check if that item exists
+  if (!cartItem.item) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CartItemStyles, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }, "Sorry, this item is no longer available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RemoveFromCart__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: cartItem.id,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }));
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CartItemStyles, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 3
+      lineNumber: 32,
+      columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     width: "100",
@@ -404,45 +428,45 @@ var CartItem = function CartItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 5
+      lineNumber: 33,
+      columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cart-item-details",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 5
+      lineNumber: 38,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 7
+      lineNumber: 39,
+      columnNumber: 9
     }
   }, cartItem.item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
+      lineNumber: 40,
+      columnNumber: 9
     }
   }, Object(_lib_formatMoney__WEBPACK_IMPORTED_MODULE_3__["default"])(cartItem.item.price * cartItem.quantity), ' - ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 9
+      lineNumber: 44,
+      columnNumber: 11
     }
   }, cartItem.quantity, " \xD7 ", Object(_lib_formatMoney__WEBPACK_IMPORTED_MODULE_3__["default"])(cartItem.item.price), " each"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RemoveFromCart__WEBPACK_IMPORTED_MODULE_4__["default"], {
     id: cartItem.id,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 5
+      lineNumber: 49,
+      columnNumber: 7
     }
   }));
 };
